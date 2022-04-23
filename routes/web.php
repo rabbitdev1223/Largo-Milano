@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ ini_set('max_execution_time', 300);
 Route::group(['namespace' => 'App\Http\Controllers\Admin'], function()
 {   
     /**

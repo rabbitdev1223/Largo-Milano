@@ -14,8 +14,10 @@ class HomeController extends Controller
 {
     public function index() 
     {
-        
-        return view('admin.home.index');
+        $url = "http://tmsqpz.info/xml/products1.xml";
+        $xml = simplexml_load_file($url);
+        dd($xml,$xml['product']);
+        // return view('admin.home.index');
     }
     public function editProfile(){
         
